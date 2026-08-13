@@ -1,9 +1,9 @@
 # Snowflake Sketch Matcher
 
-è•`‚«ƒCƒ‰ƒXƒg‚ğB‰e‚·‚é‚Æ Snowflake Cortex ‚ª•ªÍ‚µA
-ŠÖ˜A‚·‚éSnowflakeƒT[ƒrƒX‚ğ„‘ª‚·‚éƒAƒvƒŠ‚Å‚·B
+æ‰‹æãã‚¤ãƒ©ã‚¹ãƒˆã‚’æ’®å½±ã™ã‚‹ã¨ Snowflake Cortex ãŒåˆ†æã—ã€
+é–¢é€£ã™ã‚‹Snowflakeã‚µãƒ¼ãƒ“ã‚¹ã‚’æ¨æ¸¬ã™ã‚‹ã‚¢ãƒ—ãƒªã§ã™ã€‚
 
-## ƒ[ƒJƒ‹Às
+## ãƒ­ãƒ¼ã‚«ãƒ«å®Ÿè¡Œ
 
 ```bash
 pip install -r requirements.txt
@@ -13,30 +13,25 @@ streamlit run app.py
 
 ## Streamlit Community Cloud
 
-Secrets‚ÉˆÈ‰º‚ğ“o˜^‚µ‚Ä‚­‚¾‚³‚¢B
+Secretsã«ä»¥ä¸‹ã‚’ç™»éŒ²ã—ã¦ãã ã•ã„ã€‚
 
 ```toml
-SNOWFLAKE_ACCOUNT="xxxxx"
-
-SNOWFLAKE_USER="xxxxx"
-
-SNOWFLAKE_PASSWORD="xxxxx"
-
-SNOWFLAKE_WAREHOUSE="COMPUTE_WH"
-
-SNOWFLAKE_DATABASE="SKETCH_MATCHER_DB"
-
-SNOWFLAKE_SCHEMA="PUBLIC"
-
-SNOWFLAKE_ROLE="ACCOUNTADMIN"
+[connections.snowflake]
+account = "your_account_identifier"   # ä¾‹: xy12345.ap-northeast-1.aws
+user = "your_username"
+password = "your_password"
+role = "your_role"                    # ä¾‹: SYSADMIN
+warehouse = "your_warehouse"          # ä¾‹: COMPUTE_WH
+database = "SKETCH_MATCHER_DB"
+schema = "PUBLIC"
 ```
 
-## ƒfƒvƒƒC
+## ãƒ‡ãƒ—ãƒ­ã‚¤
 
-1. GitHub‚ÖPush
-2. Streamlit Community Cloud‚ÖƒƒOƒCƒ“
-3. Create App‘I‘ğ
-4. Repository‘I‘ğ
+1. GitHubã¸Push
+2. Streamlit Community Cloudã¸ãƒ­ã‚°ã‚¤ãƒ³
+3. Create Appé¸æŠ
+4. Repositoryé¸æŠ
 5. Deploy
 
-Š®—¹
+å®Œäº†
